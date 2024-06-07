@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #76b852;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  min-width: 200px;
+  width: 450px;
+  /* aspect-ratio: 3/2.3; */
+  background-color: white;
+  padding: 30px 22px;
+  margin: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.register-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 1.5rem; */
+  justify-content: space-evenly;
+
+}
+
+.register-form input {
+  border: none;
+  background-color: #f2f2f2;
+  color: rgb(96, 91, 91);
+  font-size: 1.1rem;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0 10px 0;
+}
+
+.register-form input::-webkit-input-placeholder{
+  color: rgb(184, 184, 184);
+}
+
+.register-btn {
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.2rem;
+  height: 55px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.register-btn:active {
+  background-color: #5cf23e;
+}
+
+.register-btn:disabled{
+  cursor: default;
+}
+
+.message {
+  color: white;
+  font-size: 1.2rem;
+  height: 55px;
+  padding: 0 15px;  
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.success {
+  background-color: rgb(101, 164, 224);
+}
+
+.failure {
+  background-color: red;
+}
+
+
+
+.input-validator {
+  display: block;
+  color: red;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-bottom: 10px ;
+}
